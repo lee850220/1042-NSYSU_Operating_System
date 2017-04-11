@@ -1,0 +1,12 @@
+/*	Welcome to use the Makefile System	*/
+version 1.3
+Author	Kelvin Lee
+
+You can type the key word below.
+
+make
+	help	   	---to show this page.
+	kshell		---to compile the main program.
+	clean		---to remove the object files.
+	debug		---to compile the main program with debugging function,also it will not show the command result.
+	

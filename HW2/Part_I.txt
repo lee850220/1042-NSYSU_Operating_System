@@ -1,0 +1,30 @@
+Part I
+
+1.
+	Yes.
+	先將1置入暫存器中，使用swap交換LOCK和暫存器的數值，即可達到TSL的效果。
+
+2.
+	Q表示每次可以執行的時間長度，T為該程序所需合計時間
+	(a)	當Q = ∞，代表process可以一次執行完畢，不需要分多次，因此
+		CPU efficiency = T/(T+S)
+	(b) 當Q > T，同a小題，一次可執行完畢，因此
+		CPU efficiency = T/(T+S)
+	(c)	當S < Q < T，程序必須分段執行，因此Total time需要加上切換的時間
+		T/Q為分割段數，共需要S*(T/Q)切換時間
+		CPU efficiency = (T)/(T + S*(T/Q)) = Q/(Q+S)
+	(d)	當Q = S，帶入(c)結論，
+		CPU efficiency = S/(S+S) = 50%
+	(e)	當Q nearly 0，帶入(c)結論，
+		CPU efficiency = Q/(Q+S) = 0
+
+3.
+	receive(&message);
+	
+	忽略來源位置。
+	
+4.
+	A = 1
+	B = 1
+	C = 2
+	D = 2
